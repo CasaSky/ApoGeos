@@ -1,5 +1,6 @@
 package com.team6.haw.apogeos;
 
+import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -11,8 +12,12 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
+    protected static SQLiteOpenHelper database;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        // TODO create Database
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
